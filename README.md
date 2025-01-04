@@ -1,0 +1,2 @@
+# NLP and Large Language Models Exploration
+This repository is designed to help me explore Natural Language Processing (NLP) concepts and play around with different Large Language Models (LLMs). It includes preconfigured scripts, example inputs, and outputs for tasks like sentiment analysis, classification, text generation, code generation, etc. with a focus on learning and demonstration.

@@ -1,0 +1,30 @@
+[
+    {
+        "sentence": "We are very happy to show you the \ud83e\udd17 Transformers library.",
+        "analysis": {
+            "label": "POSITIVE",
+            "confidence": 0.9997795224189758
+        }
+    },
+    {
+        "sentence": "The software deployment process was cumbersome and frustrating.",
+        "analysis": {
+            "label": "NEGATIVE",
+            "confidence": 0.9997617602348328
+        }
+    },
+    {
+        "sentence": "A philosopher once said, 'The limits of my language mean the limits of my world.'",
+        "analysis": {
+            "label": "NEGATIVE",
+            "confidence": 0.9011848568916321
+        }
+    },
+    {
+        "sentence": "Cloud computing is revolutionizing industries by enabling scalable solutions.",
+        "analysis": {
+            "label": "POSITIVE",
+            "confidence": 0.9991815686225891
+        }
+    }
+]
