@@ -4,3 +4,6 @@ transformers
 torchvision
 jupyterlab
 matplotlib
+colored
+tabulate
+termcolor
