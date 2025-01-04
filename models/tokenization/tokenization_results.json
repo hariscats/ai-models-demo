@@ -1,0 +1,225 @@
+[
+    {
+        "input_text": "The quick brown fox jumps over the lazy dog.",
+        "tokens": [
+            {
+                "token": "The",
+                "token_id": 464,
+                "type": "Subword"
+            },
+            {
+                "token": "\u0120quick",
+                "token_id": 2068,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120brown",
+                "token_id": 7586,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120fox",
+                "token_id": 21831,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120jumps",
+                "token_id": 18045,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120over",
+                "token_id": 625,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120the",
+                "token_id": 262,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120lazy",
+                "token_id": 16931,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120dog",
+                "token_id": 3290,
+                "type": "Word"
+            },
+            {
+                "token": ".",
+                "token_id": 13,
+                "type": "Subword"
+            }
+        ],
+        "num_tokens": 10
+    },
+    {
+        "input_text": "A philosopher once said, 'The limits of my language mean the limits of my world.'",
+        "tokens": [
+            {
+                "token": "A",
+                "token_id": 32,
+                "type": "Subword"
+            },
+            {
+                "token": "\u0120philosopher",
+                "token_id": 23723,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120once",
+                "token_id": 1752,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120said",
+                "token_id": 531,
+                "type": "Word"
+            },
+            {
+                "token": ",",
+                "token_id": 11,
+                "type": "Subword"
+            },
+            {
+                "token": "\u0120'",
+                "token_id": 705,
+                "type": "Word"
+            },
+            {
+                "token": "The",
+                "token_id": 464,
+                "type": "Subword"
+            },
+            {
+                "token": "\u0120limits",
+                "token_id": 7095,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120of",
+                "token_id": 286,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120my",
+                "token_id": 616,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120language",
+                "token_id": 3303,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120mean",
+                "token_id": 1612,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120the",
+                "token_id": 262,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120limits",
+                "token_id": 7095,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120of",
+                "token_id": 286,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120my",
+                "token_id": 616,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120world",
+                "token_id": 995,
+                "type": "Word"
+            },
+            {
+                "token": ".'",
+                "token_id": 2637,
+                "type": "Subword"
+            }
+        ],
+        "num_tokens": 18
+    },
+    {
+        "input_text": "\ud83e\udd17 Transformers make working with language models fun and easy!",
+        "tokens": [
+            {
+                "token": "\u00f0\u0141",
+                "token_id": 8582,
+                "type": "Subword"
+            },
+            {
+                "token": "\u00a4",
+                "token_id": 97,
+                "type": "Subword"
+            },
+            {
+                "token": "\u0139",
+                "token_id": 245,
+                "type": "Subword"
+            },
+            {
+                "token": "\u0120Transformers",
+                "token_id": 39185,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120make",
+                "token_id": 787,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120working",
+                "token_id": 1762,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120with",
+                "token_id": 351,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120language",
+                "token_id": 3303,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120models",
+                "token_id": 4981,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120fun",
+                "token_id": 1257,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120and",
+                "token_id": 290,
+                "type": "Word"
+            },
+            {
+                "token": "\u0120easy",
+                "token_id": 2562,
+                "type": "Word"
+            },
+            {
+                "token": "!",
+                "token_id": 0,
+                "type": "Subword"
+            }
+        ],
+        "num_tokens": 13
+    }
+]
