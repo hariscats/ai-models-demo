@@ -13,7 +13,7 @@ if not API_KEY:
 co = cohere.ClientV2(api_key=API_KEY)
 
 # Load labeled dataset from data/labeled_dataset.json
-def load_labeled_data(file_path):
+def load_labeled_dataset(file_path):
     try:
         with open(file_path, "r") as file:
             return json.load(file)
@@ -70,7 +70,7 @@ def evaluate_model(dataset, co_client, top_k=3):
 def main():
     # Define file path for labeled dataset
     dataset_path = "data/labeled_dataset.json"
-    dataset = load_labeled_data(dataset_path)
+    dataset = load_labeled_dataset(dataset_path)
     if not dataset:
         return
 
