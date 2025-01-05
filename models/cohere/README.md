@@ -1,76 +1,79 @@
-# Get Started with Cohere Rerank
+# **Cohere Rerank Project**
 
-This is a simple Python script that uses the **Cohere Rerank API** to rank a set of documents based on a user query. Follow these steps to get up and running quickly:
+This project demonstrates how to use the **Cohere Rerank API** to rank documents based on relevance and evaluate the model's performance using metrics like **MRR** and **Precision@k**.
 
 ---
 
-### **How It Works**
-- You provide a query (e.g., *"Are there fitness-related perks?"*).
-- The script takes a set of documents (stored in a `documents.json` file).
-- It uses the Cohere Rerank model to find and rank the most relevant results.
+### **Project Structure**
+```
+cohere-rerank/
+├── data/
+│   ├── documents.json          # Documents for reranking
+│   ├── labeled_dataset.json    # Labeled dataset for evaluation
+├── src/
+│   ├── rerank.py               # Script for reranking documents
+│   ├── evaluate_model.py       # Script for evaluating model performance
+├── .env                        # Environment variables (API key)
+├── README.md                   # Project instructions
+├── requirements.txt            # Python dependencies
+```
 
 ---
 
 ### **Setup Instructions**
 
-#### **1. Clone the Repo**
-If this is part of a repo, clone it. Otherwise, copy the script and `documents.json` to your project folder.
+1. **Clone the Repository**  
+   ```bash
+   git clone <repo-url>
+   cd cohere-rerank
+   ```
 
-#### **2. Install Dependencies**
-You’ll need Python 3.7+ and a couple of libraries:
+2. **Install Dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Up API Key**  
+   Add your **Cohere API Key** in a `.env` file:
+   ```
+   COHERE_API_KEY=your_actual_api_key
+   ```
+
+4. **Add Your Data**  
+   - Update `data/documents.json` with documents for reranking.
+   - Add labeled queries and documents in `data/labeled_dataset.json` for evaluation.
+
+---
+
+### **Usage**
+
+#### **1. Rerank Documents**
+Run the `rerank.py` script to rerank documents based on a query:
 ```bash
-pip install cohere python-dotenv
+python src/rerank.py
 ```
 
-#### **3. Get a Cohere API Key**
-- Sign up at [Cohere](https://cohere.com/).
-- Grab your free API key from the [API Key Dashboard](https://dashboard.cohere.com/api-keys).
-
-#### **4. Set Up Your Environment**
-Set your API key as an environment variable for security:
-- On macOS/Linux:
-  ```bash
-  export COHERE_API_KEY="your_actual_api_key"
-  ```
-- On Windows:
-  ```cmd
-  set COHERE_API_KEY=your_actual_api_key
-  ```
-
-Alternatively, create a `.env` file in the project folder:
-```
-COHERE_API_KEY=your_actual_api_key
-```
-
-#### **5. Add Your Documents**
-Update `documents.json` with the content you want to rank. Here’s an example format:
-```json
-[
-    {"text": "Reimbursing Travel Expenses: Easily manage your travel expenses by submitting them through our finance tool."},
-    {"text": "Health and Wellness Benefits: We offer gym memberships, yoga classes, and health insurance."}
-]
+#### **2. Evaluate the Model**
+Run the `evaluate_model.py` script to calculate MRR and Precision@k:
+```bash
+python src/evaluate_model.py
 ```
 
 ---
 
-### **Run the Script**
-Let’s rank some documents! 🚀
-```bash
-python rerank.py
-```
+### **Expected Output**
+- **`rerank.py`**:
+  Ranks documents based on relevance to the query.
+  ```
+  --- Reranked Documents ---
+  Rank: 1
+  Score: 0.92
+  Document: We offer gym memberships and yoga classes.
+  ```
 
----
-
-### **Example Output**
-For the query **"Are there fitness-related perks?"**, you might see:
-```
---- Reranked Documents ---
-
-Rank: 1
-Score: 0.92
-Document: Health and Wellness Benefits: We offer gym memberships, yoga classes, and health insurance.
-
-Rank: 2
-Score: 0.30
-Document: Reimbursing Travel Expenses: Easily manage your travel expenses by submitting them through our finance tool.
-```
+- **`evaluate_model.py`**:
+  Displays model performance metrics:
+  ```
+  Mean Reciprocal Rank (MRR): 0.8333
+  Precision@3: 0.6667
+  ```
