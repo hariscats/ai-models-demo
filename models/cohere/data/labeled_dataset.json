@@ -1,0 +1,18 @@
+[
+    {
+        "query": "Are there fitness-related perks?",
+        "documents": [
+            {"text": "We offer gym memberships.", "label": 2},
+            {"text": "Reimbursing travel expenses.", "label": 0},
+            {"text": "Health insurance is available.", "label": 1}
+        ]
+    },
+    {
+        "query": "What are the travel reimbursement policies?",
+        "documents": [
+            {"text": "We offer gym memberships.", "label": 0},
+            {"text": "Reimbursing travel expenses.", "label": 2},
+            {"text": "Health insurance is available.", "label": 0}
+        ]
+    }
+]
