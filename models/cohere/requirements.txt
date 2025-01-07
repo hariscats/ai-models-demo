@@ -1,2 +1,2 @@
-cohere==2.9.0
+cohere
 python-dotenv==1.0.0
